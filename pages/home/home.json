@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "swiper":"/components/swiper/swiper",
+    "recommends":"/pages/home/recommends/recommends",
+    "popular":"/pages/home/popular/popular",
+    "tab":"/components/tab/tab",
+    "goods":"/components/goods/goods",
+    "back":"/components/back/back"
+  }
+}

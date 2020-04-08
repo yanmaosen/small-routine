@@ -1,0 +1,26 @@
+/* pages/category/category.wxss */
+.category {
+  display: flex;
+}
+.nav {
+  flex: 1!important;
+}
+.nav-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.nav-item:first-child text {
+  padding: 18rpx 34rpx;
+}
+.nav-item:nth-child(n+2) text {
+  padding: 18rpx 62rpx;
+}
+.active {
+  border-left: 6rpx solid #ff5777;
+}
+.content {
+  flex: 3!important;
+  overflow: hidden;
+}

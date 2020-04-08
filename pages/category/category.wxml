@@ -1,0 +1,21 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+
+		<view class="nav">
+    	<scroll-view scroll-y="true" style="height: 100vh;">
+			<block wx:for="{{nav}}" wx:key="index">
+				<view class="'nav-item'" bindtap="navClick" data-index="{{index}}">
+					<text class="{{currentIndex == index ? 'active' : ''}}">{{item.title}}</text>
+				</view>
+			</block>
+      	</scroll-view>
+		</view>
+
+
+	<view class="content">
+		<scroll-view scroll-y="true" style="height: 100vh;" >
+			<goods goods="{{content}}" height="{{250}}"/>
+		</scroll-view>
+	</view>
+
+</view>

@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<swiper banners="{{banners}}"/>
+<!-- 推荐内容 -->
+<recommends recommends="{{recommends}}" bind:imageLoad="imageLoad"/>
+<!-- 本周流行 -->
+<popular/>
+<!-- 切换栏 -->
+<tab tab="{{['流行','新款','精选']}}" bind:tabClick="tabClick" class="{{isTabShow ? '' : 'fixed'}}" wx:if="{{!isTabShow}}"  id="tab1"/>
+<tab tab="{{['流行','新款','精选']}}" bind:tabClick="tabClick" id="tab2"/>
+<!-- 商品内容 -->
+<goods goods="{{goods[currentGoods].list}}" id="goods" bindgoodsItemClick="goodsItemClick"/>
+<!-- 返回顶部按钮 -->
+<back wx:if="{{isShow}}"/>
+

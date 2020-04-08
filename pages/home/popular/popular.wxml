@@ -1,0 +1,4 @@
+<!--pages/home/popular/popular.wxml-->
+<view class="popular">
+	<image src="/assets/recommend_bg.jpg" mode="widthFix"></image>
+</view>

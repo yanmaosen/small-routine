@@ -1,0 +1,2 @@
+<!--pages/detail/detail.wxml-->
+<swiper banners="{{banners}}" height="{{600}}"></swiper>

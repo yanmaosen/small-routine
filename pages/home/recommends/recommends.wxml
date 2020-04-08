@@ -1,0 +1,9 @@
+<!--pages/home/recommends/recommends.wxml-->
+<view class="recommends">
+  <block wx:for="{{recommends}}" wx:key="index">
+    <view class="recommend-item">
+      <image src="{{item.image}}" bindload="imageLoad"></image>
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view>

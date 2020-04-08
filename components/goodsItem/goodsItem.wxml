@@ -1,0 +1,6 @@
+<!--components/goods/good.wxml-->
+<view class="good-item" bindtap="goodsItemClick" data-iid="{{goods.iid}}">
+  <image src="{{goods.show.img || goods.image}}" lazy-load style="height:{{height+'rpx'}}"></image>
+  <view class="title">{{goods.title}}</view>
+  <text class="price" wx:if="{{goods.price}}">￥{{goods.price}}</text>
+</view>
