@@ -32,7 +32,7 @@ Page({
           content:res.data.data.list
         })
       })
-    }, 500)
+    }, 200)
   },
   navClick(event) {
     this.setData({

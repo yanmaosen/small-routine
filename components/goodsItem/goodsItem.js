@@ -26,7 +26,8 @@ Component({
    */
   methods: {
     goodsItemClick(event) {
-
+      console.log(event);
+      
       this.triggerEvent('goodsItemClick',{data:event.currentTarget.dataset.iid},{})
     }
   }

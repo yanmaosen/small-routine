@@ -131,15 +131,7 @@ Page({
   },
   goodsItemClick(event) {
     wx.navigateTo({
-      url:'/pages/detail/detail',
-      event:{
-        someEvent: function(data) {
-        }
-      },
-      success:function(res) {
-        res.eventChannel.emit('acceptDataFromOpenerPage', { data: event.detail.data })
-      }
+      url:'../detail/detail?iid=' + event.detail.data 
     })
   }
 })
-// iid:event.currentTarget.dataset.iid

@@ -1,1 +1,73 @@
 /* pages/profile/profile.wxss */
+page {
+  background-color: rgb(248, 246, 246);
+}
+.header {
+  background-color: #ff5777;
+  padding: 20rpx 0 80rpx 30rpx;
+}
+.header image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  border: 6rpx solid white;
+  vertical-align: middle;
+}
+.header text {
+  color: white;
+  padding-left: 30rpx;
+  font-size: 34rpx;
+}
+.info {
+  display: flex;
+  width: 94%;
+  margin: -30rpx auto 0 auto;
+  background-color: white;
+  border-radius: 10rpx!important;
+  padding: 30rpx 0;
+}
+.info > view {
+  flex: 1;
+  text-align: center;
+  border-right: 2rpx solid #eee;
+}
+.info > view:last-child {
+  border:0;
+}
+.item {
+  font-size: 24rpx;
+}
+
+.info image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.box {
+  width: 94%;
+  margin: 30rpx auto 0 auto;
+  border-radius: 30rpx!important;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.order {
+  background-color: white;
+  height: 120rpx;
+  line-height: 120rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+}
+.order image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.order text {
+  padding-left: 20rpx;
+  color: #7D7D7D;
+}
+.ico {
+  display: inline-block;
+  font-size: 36rpx;
+  color: rgb(216, 213, 213)!important;
+  float: right;
+}

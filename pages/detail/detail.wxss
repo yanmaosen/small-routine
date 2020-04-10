@@ -1,1 +1,250 @@
 /* pages/detail/detail.wxss */
+.swiper {
+  height: 750rpx;
+}
+.title {
+  padding: 12rpx 10rpx;
+  font-size: 28rpx;
+}
+.price {
+  font-size: 36rpx;
+  color: #ff5777;
+  padding-left: 10rpx;
+  padding-right: 20rpx;
+}
+.oldPrice {
+  font-size: 28rpx;
+  padding-right: 12rpx;
+  text-decoration: line-through;
+}
+.discountDesc {
+  display: inline-block;
+  width: 48rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  border-radius: 18rpx;
+  font-size: 22rpx;
+  background-color: #ff5777;
+  color: white;
+  vertical-align: top;
+}
+.columns {
+  display: flex;
+  width: 96%;
+  justify-content: space-around;
+  padding: 12rpx 0;
+  margin: auto;
+  border-bottom: 4rpx solid #eee;
+  color: #7D7D7D;
+}
+.columns-item:first-child {
+  text-align: left;
+}
+.columns-item:last-child {
+  text-align: right;
+}
+.columns-item {
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+}
+.services {
+  display: flex;
+  border-bottom: 12rpx solid #eee;
+}
+.services-item {
+  flex: 1;
+  padding: 16rpx 0;
+  text-align: center;
+}
+.services-item text {
+  font-size: 20rpx;
+  color: #7D7D7D;
+}
+.seller {
+  padding: 20rpx 12rpx;
+}
+.sellerInfo {
+  padding: 10rpx 20rpx;
+}
+.sellerInfo image {
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+.sellerInfo text {
+  padding-left: 20rpx;
+}
+.sellerData {
+  display: flex;
+  padding: 20rpx 20rpx;
+  margin-bottom: 30rpx;
+}
+.sellerData view {
+  flex: 1;
+}
+.left {
+  display: flex;
+  padding-top: 20rpx;
+  padding-left: 40rpx;
+  border-right: 4rpx solid #eee;
+}
+.left .small {
+  font-size: 20rpx;
+  padding: 6rpx 0;
+}
+.left view {
+  flex: 1;
+  width: 100rpx;
+  text-align: center;
+}
+.right {
+  padding-left: 60rpx;
+}
+.right text {
+  display: inline-block;
+  width: 100rpx;
+  font-size: 24rpx;
+}
+.right text:nth-child(2) {
+  width: 60rpx;
+  padding-left: 30rpx;
+}
+.right text:nth-child(3) {
+  width: 60rpx;
+  padding-left: 30rpx;
+}
+.inShop {
+  padding: 0 30rpx 60rpx 20rpx;
+  border-bottom: 12rpx solid #eee;
+}
+.inShop view {
+  width: 240rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+  margin: auto;
+  color: black;
+  font-size: 28rpx;
+}
+.desc {
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+}
+.desc view:last-child {
+  text-align: right;
+}
+.showTitle {
+  padding: 10rpx 0;
+  text-align: center;
+}
+.showImage image {
+  display: block;
+  min-width: 100%;
+  height: 800rpx;
+}
+.showImage image:last-child {
+  height: 300rpx;
+}
+.table {
+  width: 92%;
+  margin: auto;
+}
+.table .tr {
+  display: flex;
+  padding: 10rpx 0;
+  border-bottom: 4rpx solid #eee;
+}
+.table .tr .td {
+  flex: 1;
+  font-size: 24rpx;
+}
+.params {
+  display: flex;
+  width: 92%;
+  margin: auto;
+  padding: 10rpx 0;
+  border-bottom: 4rpx solid #eee;
+  font-size: 24rpx;
+}
+.params view:first-child {
+  flex: 1;
+}
+.params view:last-child {
+  flex: 3;
+}
+.rate {
+  margin-top: 30rpx;
+  border-top: 20rpx solid #eee;
+  border-bottom: 20rpx solid #eee;
+}
+.rate .header {
+  height: 80rpx;
+  font-size: 26rpx;
+  line-height: 80rpx;
+  border-bottom:2rpx solid #eee;
+}
+.rate .header text:first-child {
+  padding-left: 30rpx;
+  padding-right: 520rpx;
+}
+.rate .user {
+  padding: 20rpx 0;
+}
+.rate .user image {
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.rate .user text {
+  font-size: 26rpx;
+}
+.rate .content {
+  padding: 0 30rpx 20rpx 30rpx;
+  font-size: 26rpx;
+}
+.rate .style {
+  padding: 0 30rpx 30rpx 30rpx;
+  font-size: 22rpx;
+  color:#7D7D7D;
+}
+.goShopping {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.goShopping view {
+  flex: 1;
+  text-align: center;
+  height: 98rpx;
+  background-color: white;
+  font-size: 20rpx;
+}
+.goShopping view:nth-child(4) {
+  flex: 2;
+  font-size: 28rpx;
+  line-height: 98rpx;
+  background-color: wheat;
+  color: white;
+}
+.goShopping view:nth-child(5) {
+  flex: 2;
+  flex: 2;
+  font-size: 28rpx;
+  line-height: 98rpx;
+  background-color: #ff5777;
+  color: white;
+}
+.goShopping view image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 18rpx;
+}

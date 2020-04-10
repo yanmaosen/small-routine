@@ -1,2 +1,37 @@
 <!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<view class="box">
+<block wx:for="{{cartData}}" wx:key="index" >
+	<view class="cart">
+		<view class="checkBox">
+			<checkbox-group bindchange="checkClick" data-index="{{index}}">
+				<label>
+					<checkbox checked="{{item.checked}}"></checkbox>
+				</label>
+			</checkbox-group>
+		</view>
+		<view class="showImage">
+			<image src="{{item.image}}"></image>
+		</view>
+		<view class="content">
+			<view class="title">{{item.title}}</view>
+			<view class="pc">
+				<view>￥{{item.price}}</view>
+				<view>×{{item.count}}</view>
+			</view>
+		</view>
+	</view>
+</block>
+</view>
+<view wx:if="{{cartData.length == 0}}" class="tip">购物车没有商品，请选购</view>
+<view class="res">
+	<view class="left">
+		<checkbox-group bindchange="allCheckClick" class="ck">
+			<label>
+				<checkbox checked="{{allCheck}}"></checkbox>
+			</label>
+		</checkbox-group>
+		<text>全选</text>
+		<text>总计:￥{{allPrice}}</text>
+	</view>
+	<view class="right">去结算({{allNum}})</view>
+</view>

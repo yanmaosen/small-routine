@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "swiper":"/components/swiper/swiper"
-  }
+    "swiper":"/components/swiper/swiper",
+    "goods":"/components/goods/goods"
+  },
+  "navigationBarTitleText": "详情页"
 }

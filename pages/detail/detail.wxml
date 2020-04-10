@@ -1,2 +1,100 @@
 <!--pages/detail/detail.wxml-->
-<swiper banners="{{banners}}" height="{{600}}"></swiper>
+<!-- 轮播图 -->
+<swiper banners="{{banners}}" height="{{750}}" class="swiper"></swiper>
+<!-- 基本信息 -->
+<view>
+	<view class="title">{{title}}</view>
+	<view>
+		<text class="price">{{price}}</text>
+		<text class="oldPrice">{{oldPrice}}</text>
+		<text class="discountDesc" wx:if="{{discountDesc}}">{{discountDesc}}</text>
+	</view>
+	<view class="columns">
+		<view class="columns-item" wx:for="{{columns}}" wx:key="index">{{item}}</view>
+	</view>
+	<view class="services">
+		<view class="services-item" wx:for="{{services}}" wx:key="index">
+			<text>{{item.name}}</text>
+		</view>
+	</view>
+</view>
+<!-- 卖家信息 -->
+<view>
+	<view class="seller">
+		<view class="sellerInfo">
+			<image src="{{sellerInfo.shopLogo}}"></image>
+			<text class="sellerName">{{sellerInfo.name}}</text>
+		</view>
+		<view class="sellerData">
+			<view class="left">
+				<view>
+					<view>{{sellerInfo.cSells}}</view>
+					<view class="small">总销量</view>
+				</view>
+				<view>
+					<view>{{sellerInfo.cGoods}}</view>
+					<view class="small">全部宝贝</view>
+				</view>
+			</view>
+			<view class="right">
+				<view wx:for="{{sellerInfo.score}}" wx:key="index">
+					<text>{{item.name}}</text>
+					<text style="{{item.isBetter ? 'color:red;' : 'color:green;'}}">{{item.score}}</text>
+					<text style="{{item.isBetter ? 'color:red;' : 'color:green;'}}">{{item.isBetter ? '高' : '低'}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="inShop">
+		<view>进店逛逛</view>
+	</view>
+</view>
+<!-- 商品描述和展示 -->
+<view>
+	<view class="desc">
+		<view>——————</view>
+		<view>{{detailInfo.desc}}</view>
+		<view>——————</view>
+	</view>
+	<view class="showTitle">
+		效果展示
+	</view>
+	<view class="showImage">
+		<image src="{{item}}" wx:for="{{detailInfo.detailImage[0].list}}" wx:key="index"></image>
+	</view>
+</view>
+<!-- 商品参数 -->
+<view>
+	<view class="table" wx:for="{{size.tables}}" wx:for-item="tr" wx:key="index">
+		<view class="tr" wx:for="{{tr}}" wx:for-item="td" wx:key="index">
+			<view class="td" wx:for="{{td}}" wx:key="index">{{item}}</view>
+		</view>
+	</view>
+	<view class="params" wx:for="{{params}}" wx:key="index">
+		<view>{{item.key}}</view>
+		<view>{{item.value}}</view>
+	</view>
+</view>
+<!-- 评论 -->
+<view class="rate">
+	<view class="header">
+		<text>用户评价</text>
+		<text>更多></text>
+	</view>
+	<view class="user">
+		<image src="{{rate[0].user.avatar}}"></image>
+		<text>{{rate[0].user.uname}}</text>
+	</view>
+	<view class="content">{{rate[0].content}}</view>
+	<view class="style">{{rate[0].style}}</view>
+</view>
+<!-- 商品推荐 -->
+<goods goods="{{recommends}}" id="goods" bindgoodsItemClick="goodsItemClick" class="goods" />
+<!-- 底部购买 -->
+<view class="goShopping">
+	<view> <image src="/assets/service.png"></image>	<view>客服</view>	</view>
+	<view><image src="/assets/shop.png"></image><view>店铺</view></view>
+	<view><image src="/assets/collect.png"></image><view>收藏</view></view>
+	<view class="add" bindtap="addCart">加入购物车</view>
+	<view>购买</view>
+</view>

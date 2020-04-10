@@ -1,2 +1,45 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="header">
+	<image src="/assets/recommend_bg.jpg"></image>
+	<text>Jack Chen</text>
+</view>
+<view class="info">
+	<view>
+		<image src="/assets/shop.png"></image>
+		<view class="item"> 待付款</view>
+	</view>
+	<view>
+		<image src="/assets/shop.png"></image>
+		<view class="item">待发货</view>
+	</view>
+	<view>
+		<image src="/assets/shop.png"></image>
+		<view class="item">待收货</view>
+	</view>
+	<view>
+		<image src="/assets/shop.png"></image>
+		<view class="item">评价</view>
+	</view>
+</view>
+<view class="box">
+	<view class="order">
+		<image src="/assets/profile/pointer.png"></image>
+		<text>我的收藏</text>
+    <text class="ico">></text>
+	</view>
+  	<view class="order">
+		<image src="/assets/profile/cart.png"></image>
+		<text>全部订单</text>
+    <text class="ico">></text>
+	</view>
+  	<view class="order">
+		<image src="/assets/profile/vip.png"></image>
+		<text>个人信息</text>
+    <text class="ico">></text>
+	</view>
+  	<view class="order">
+		<image src="/assets/profile/app.png"></image>
+		<text>相关问题</text>
+    <text class="ico">></text>
+	</view>
+</view>

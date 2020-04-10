@@ -26,6 +26,8 @@ Component({
    */
   methods: {
     goodsItemClick(event) {
+      console.log(event);
+      
       this.triggerEvent('goodsItemClick',{data:event.detail.data},{})
     }
   }
